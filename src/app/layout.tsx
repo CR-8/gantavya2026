@@ -1,15 +1,33 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Orbitron, Space_Mono, Inter, Exo_2 } from "next/font/google";
+import Navbar from "@/components/layout/navbar";
+import Footer from "@/components/layout/footer";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const orbitron = Orbitron({
+  variable: "--font-orbitron",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+const exo2 = Exo_2({
+  variable: "--font-exo-2",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -24,11 +42,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Navbar/>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${orbitron.variable} ${spaceMono.variable} ${inter.variable} ${exo2.variable} antialiased overflow-x-hidden`}
       >
         {children}
       </body>
+      <Footer/>
     </html>
   );
 }
