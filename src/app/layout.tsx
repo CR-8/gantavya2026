@@ -33,6 +33,9 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Gantavya - Robotics & Tech Events",
+  icons: {
+    icon: "/logo.svg",
+  },
   description: "Join Gantavya for cutting-edge robotics competitions, tech talks, and innovation challenges. Experience the future of technology.",
 };
 

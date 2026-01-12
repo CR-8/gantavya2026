@@ -78,9 +78,9 @@ const Navbar = () => {
   return (
     <div ref={containerRef} className="relative text-white font-inter">
       {/* Top Navigation Bar */}
-      <nav className="fixed top-0 left-0 w-full flex justify-between items-center p-4 sm:p-6 md:p-8 z-[100] pointer-events-none bg-gradient-to-b from-black/80 via-black/40 to-transparent mx-auto">
-        <div className="logo pointer-events-auto w-10 h-10 sm:w-12 sm:h-12">
-          <img src="/vercel.svg" alt="Logo" className="w-full h-full object-contain" />
+      <nav className="fixed top-0 left-0 w-screen flex justify-between items-center p-4 sm:p-6 md:p-8 z-[100] pointer-events-none bg-gradient-to-b from-black/80 via-black/40 to-transparent mx-auto">
+        <div className="logo pointer-events-auto w-20 h-20 sm:w-24 sm:h-24">
+          <img src="/logo.svg" alt="Logo" className="w-full h-full object-contain" />
         </div>
         
         <div 

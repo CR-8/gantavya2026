@@ -46,7 +46,7 @@ function About() {
         className="mx-auto max-w-7xl px-4 sm:px-4 lg:px-6"
       >
         <div className="flex items-start justify-start">
-          <div className="max-w-5xl">
+          <div className="max-w-4xl">
             <p
               ref={textRef}
               className="
@@ -60,7 +60,7 @@ function About() {
                 font-poppins
                 font-semibold
                 leading-snug
-                tracking-tight
+                tracking-tighter
               "
             >
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque

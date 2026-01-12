@@ -24,22 +24,22 @@ export default function Hero() {
 
       {/* Content Overlay */}
       <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
-        <div className="px-6 text-center pointer-events-auto">
+        <div className="px-4 sm:px-6 md:px-8 text-center pointer-events-auto">
           {/* Title + X */}
           <div className="relative flex items-center justify-center">
-            <h1 className="text-[16vw] md:text-[18vw] font-bold text-white tracking-tighter leading-none font-barbra-high">
+            <h1 className="text-[18vw] sm:text-[16vw] md:text-[15vw] lg:text-[16vw] xl:text-[18vw] font-bold text-white tracking-tighter leading-none font-barbra-high">
               GANTAVYA
             </h1>
           </div>
 
           {/* Subtitle */}
-          <p className="mt-6 text-md md:text-lg font-bricolage tracking-[0.35em] uppercase text-white/70">
+          <p className="mt-4 sm:mt-5 md:mt-6 text-xs sm:text-sm md:text-base lg:text-lg font-bricolage tracking-[0.25em] sm:tracking-[0.35em] uppercase text-white/70">
             DECATRON · Celebrating 10 Years
           </p>
 
           {/* CTA */}
-          <div className="mt-10 flex justify-center">
-            <button className="px-8 py-3 border border-white/40 text-white tracking-widest text-sm
+          <div className="mt-6 sm:mt-8 md:mt-10 flex justify-center">
+            <button className="px-6 sm:px-8 py-2.5 sm:py-3 border border-white/40 text-white tracking-widest text-xs sm:text-sm
                                hover:border-orange-400 hover:text-orange-300 transition">
               ENTER THE GRID
             </button>

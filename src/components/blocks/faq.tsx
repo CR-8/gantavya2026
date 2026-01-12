@@ -65,18 +65,18 @@ const faqData = [
   },
 ]
   return (
-    <div className='min-h-screen w-screen bg-black relative flex flex-col tracking-tighter pb-40'>
+    <div className='min-h-screen w-screen bg-black relative flex flex-col tracking-tighter pb-24 sm:pb-32 md:pb-40'>
       {/* Gradient transition for seamless blend with next section */}
-      <div className='absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none z-30'></div>
+      <div className='absolute bottom-0 left-0 right-0 h-32 sm:h-36 md:h-40 bg-gradient-to-b from-transparent via-black/50 to-black pointer-events-none z-30'></div>
       
-      <div className="relative mx-4 mt-24 h-20 text-2xl flex items-center justify-start gap-6 px-8 lg:px-16">
-        <span className="text-transparent bg-neutral-300 h-1 w-12">..........</span>
+      <div className="relative mx-4 mt-16 sm:mt-20 md:mt-24 h-16 sm:h-20 text-lg sm:text-xl md:text-2xl flex items-center justify-start gap-4 sm:gap-6 px-4 sm:px-6 md:px-8 lg:px-16">
+        <span className="text-transparent bg-neutral-300 h-1 w-8 sm:w-10 md:w-12">..........</span>
         <span className="text-white flex items-center justify-center">Questions</span>
       </div>
       
-      <div className='w-full flex flex-col lg:flex-row items-start justify-between gap-12 lg:gap-16 px-8 lg:px-16'>
+      <div className='w-full flex flex-col lg:flex-row items-start justify-between gap-8 sm:gap-10 md:gap-12 lg:gap-16 px-4 sm:px-6 md:px-8 lg:px-16'>
         <div className="w-full lg:w-1/2 lg:sticky lg:top-24">
-          <div className="text-5xl lg:text-6xl">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         <span className="text-white tracking-tighter">
           Frequently Asked Questions
           <span className="text-neutral-500"> About Our Events</span>
@@ -90,12 +90,12 @@ const faqData = [
           <AccordionItem 
             key={i} 
             value={`item-${i}`}
-            className="border-0 rounded-3xl px-8 py-4 bg-neutral-900/40 hover:bg-neutral-900/60 transition-all duration-300"
+            className="border-0 rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-neutral-900/40 hover:bg-neutral-900/60 transition-all duration-300"
           >
-            <AccordionTrigger className="text-xl font-normal text-white hover:no-underline py-6">
+            <AccordionTrigger className="text-base sm:text-lg md:text-xl font-normal text-white hover:no-underline py-4 sm:py-5 md:py-6">
           {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-neutral-400 text-base leading-relaxed pt-2 pb-4">
+            <AccordionContent className="text-neutral-400 text-sm sm:text-base leading-relaxed pt-2 pb-3 sm:pb-4">
           {item.answer}
             </AccordionContent>
           </AccordionItem>
@@ -103,18 +103,18 @@ const faqData = [
           </Accordion>
         </div>
       </div>
-      <div className="w-full px-8 lg:px-16 mt-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 mt-8 sm:mt-10 md:mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {faqData2.map((item, i) => (
         <Accordion key={i} type="single" collapsible>
           <AccordionItem 
             value={`item-${i}`}
-            className="border-0 rounded-3xl px-8 py-4 bg-neutral-900/40 hover:bg-neutral-900/60 transition-all duration-300"
+            className="border-0 rounded-2xl sm:rounded-3xl px-4 sm:px-6 md:px-8 py-3 sm:py-4 bg-neutral-900/40 hover:bg-neutral-900/60 transition-all duration-300"
           >
-            <AccordionTrigger className="text-xl font-normal text-white hover:no-underline py-6">
+            <AccordionTrigger className="text-base sm:text-lg md:text-xl font-normal text-white hover:no-underline py-4 sm:py-5 md:py-6">
           {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-neutral-400 text-base leading-relaxed pt-2 pb-4">
+            <AccordionContent className="text-neutral-400 text-sm sm:text-base leading-relaxed pt-2 pb-3 sm:pb-4">
           {item.answer}
             </AccordionContent>
           </AccordionItem>
